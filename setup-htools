@@ -1,0 +1,5 @@
+#!/bin/bash
+
+stack install alex happy
+stack install ghc-mod hlint stylish-haskell
+

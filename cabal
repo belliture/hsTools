@@ -1,0 +1,9 @@
+#!/bin/bash
+
+stack exec cabal -- \
+    $@ \
+    --package-db=clear \
+    --package-db=global \
+    --package-db=$(stack path --snapshot-pkg-db) \
+    --package-db=$(stack path --local-pkg-db)
+
